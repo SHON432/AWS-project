@@ -1,7 +1,56 @@
-__pycache__/
-*.pyc
-*.pyo
+# ---- Secrets & credentials (never commit) ----
 .env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+id_rsa*
+id_ed25519*
+credentials
+credentials.json
+secrets.json
+.aws/
+aws-credentials*
+
+# ---- Infrastructure state ----
+*.tfstate
+*.tfstate.*
+.terraform/
+*.tfvars
+!*.tfvars.example
+cdk.out/
+.serverless/
+samconfig.toml
+.aws-sam/
+
+# ---- Python ----
+__pycache__/
+*.py[cod]
+*.egg-info/
 venv/
 .venv/
+env/
+.pytest_cache/
+.mypy_cache/
+
+# ---- Lambda packaging ----
+*.zip
+package/
+build/
+dist/
+
+# ---- Logs ----
+*.log
+logs/
+
+# ---- IDE ----
+.vscode/
+.idea/
+*.swp
+
+# ---- OS ----
+Thumbs.db
+desktop.ini
 .DS_Store
