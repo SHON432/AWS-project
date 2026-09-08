@@ -1,7 +1,6 @@
 # ---- Secrets & credentials (never commit) ----
 .env
 .env.*
-!.env.example
 *.pem
 *.key
 *.p12
@@ -18,8 +17,7 @@ aws-credentials*
 *.tfstate
 *.tfstate.*
 .terraform/
-*.tfvars
-!*.tfvars.example
+*.tfvars*
 cdk.out/
 .serverless/
 samconfig.toml
